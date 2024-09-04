@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: auto;
+  height: 100vh;
+  font-size: 12px;
+}
+
+.main-container {
+  width: auto;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-component {
+  display: flex;
+}
+
+.card1,
+.card2,
+.card3 {
+  width: 200px;
+  height: 300px;
+}
+
+.card1 {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 5px 0 0 5px;
+}
+
+.card2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card3 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 5px 5px 0;
+}
+
+#card img {
+  width: 30px;
+  height: 20px;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+  font-family: "Lexend Deca";
+  padding-left: 25px;
+  padding-top: 20px;
+}
+
+.card-component button {
+  width: 80px;
+  height: 28px;
+  border-radius: 15px;
+  border: none;
+  position: absolute;
+  bottom: 30px;
+  font-family: "Lexend Deca";
+  font-size: 10px;
+}
+
+.card-component p {
+  color: white;
+  font-size: 10px;
+  line-height: 15px;
+}
+.btn1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-component h1 {
+  color: white;
+  font-family: "Big Shoulders Display";
+}
+
+@media (max-width: 600px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
